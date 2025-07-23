@@ -123,8 +123,8 @@ function TakeAway() {
                 <div key={index} className="bg-white border border-secondary-gray-light rounded-2xl overflow-hidden shadow-xl transform hover:-translate-y-2 transition-all duration-500 hover:shadow-2xl">
                   <div className="p-6">
                     <div className="flex justify-between items-start mb-4">
-                      <h3 className="font-heading text-2xl text-secondary-gray-dark">{pizza.name}</h3>
-                      <p className="font-bold text-2xl text-accent-red ml-4">{pizza.price}</p>
+                      <h3 className="font-heading text-2xl text-secondary-gray-dark flex-1 mr-4">{pizza.name}</h3>
+                      <p className="font-bold text-2xl text-accent-red flex-shrink-0">{pizza.price}</p>
                     </div>
                     <p className="text-secondary-gray text-sm leading-relaxed mb-0">{pizza.ingredients}</p>                    
                     

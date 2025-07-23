@@ -69,6 +69,11 @@ Questo file traccia le attività necessarie per completare la landing page della
     - [x] Mantenere ingredienti delle pizze sempre visibili.
     - [x] Configurare categoria di default per pagina Restaurant.
     - [x] Testare funzionalità su tutte le pagine.
+- [x] **Ottimizzazioni Layout:**
+    - [x] Regolare larghezza titoli per evitare che prezzi vadano a capo.
+    - [x] Impostare "Contorni" come categoria di default nella pagina Restaurant.
+    - [x] Aggiungere icone funzionanti per tutte le categorie del ristorante.
+    - [x] Migliorare responsive design delle card menu.
 
 ## Fase 6: Rifinitura e Test
 
@@ -103,4 +108,6 @@ Questo file traccia le attività necessarie per completare la landing page della
   - Bottone "torna in alto" che appare durante lo scroll.
   - Sezioni filtri comprimibili nelle pagine menu (Pizzeria e TakeAway).
   - Ingredienti delle pizze sempre visibili per facilità di lettura.
-  - Categoria "Antipasti" selezionata di default nella pagina Restaurant.
+  - Categoria "Contorni" selezionata di default nella pagina Restaurant.
+  - Layout ottimizzato per evitare che i prezzi vadano a capo.
+  - Icone funzionanti per tutte le categorie del ristorante.

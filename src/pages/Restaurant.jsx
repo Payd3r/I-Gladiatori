@@ -1,15 +1,37 @@
 import React, { useState } from 'react';
-import { FaUtensils, FaWineGlass, FaCoffee, FaStar } from 'react-icons/fa';
+import { FaUtensils, FaWineGlass, FaCoffee, FaStar, FaLeaf, FaDrumstickBite, FaBreadSlice, FaIceCream } from 'react-icons/fa';
 import menu from '../data/ristorante.json';
 
 function Restaurant() {
-  const [selectedCategory, setSelectedCategory] = useState('Antipasti');
+  const [selectedCategory, setSelectedCategory] = useState('Contorni');
 
   // Estrai tutte le categorie uniche dal menu
   const categories = [...new Set(menu.map(item => item.category))];
 
   // Filtra il menu in base alla categoria selezionata
   const filteredMenu = menu.filter(item => item.category === selectedCategory);
+
+  // Funzione per ottenere l'icona in base alla categoria
+  const getCategoryIcon = (category) => {
+    switch (category) {
+      case 'Antipasti':
+        return <FaBreadSlice />;
+      case 'Primi Piatti':
+        return <FaUtensils />;
+      case 'Secondi Piatti':
+        return <FaDrumstickBite />;
+      case 'Contorni':
+        return <FaLeaf />;
+      case 'Dolci':
+        return <FaIceCream />;
+      case 'Bevande':
+        return <FaWineGlass />;
+      case 'Caffè':
+        return <FaCoffee />;
+      default:
+        return <FaUtensils />;
+    }
+  };
 
   return (
     <div className="bg-primary-cream min-h-screen">
@@ -45,13 +67,7 @@ function Restaurant() {
                     : 'bg-white text-secondary-gray-dark hover:bg-primary-yellow/20 border border-secondary-gray-light'
                 }`}
               >
-                {category === 'Antipasti' && <FaUtensils />}
-                {category === 'Primi Piatti' && <FaUtensils />}
-                {category === 'Secondi Piatti' && <FaUtensils />}
-                {category === 'Contorni' && <FaUtensils />}
-                {category === 'Dolci' && <FaStar />}
-                {category === 'Bevande' && <FaWineGlass />}
-                {category === 'Caffè' && <FaCoffee />}
+                {getCategoryIcon(category)}
                 {category}
               </button>
             ))}
@@ -80,8 +96,8 @@ function Restaurant() {
                 <div key={index} className="bg-white border border-secondary-gray-light rounded-2xl overflow-hidden shadow-xl transform hover:-translate-y-2 transition-all duration-500 hover:shadow-2xl">
                   <div className="p-6">
                     <div className="flex justify-between items-start mb-4">
-                      <h3 className="font-heading text-2xl text-secondary-gray-dark">{item.name}</h3>
-                      <p className="font-bold text-2xl text-accent-red ml-4">{item.price}</p>
+                      <h3 className="font-heading text-2xl text-secondary-gray-dark flex-1 mr-4">{item.name}</h3>
+                      <p className="font-bold text-2xl text-accent-red flex-shrink-0">{item.price}</p>
                     </div>
                     <p className="text-secondary-gray text-sm leading-relaxed mb-0">{item.ingredients}</p>                    
                   </div>
