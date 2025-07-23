@@ -1,0 +1,368 @@
+[
+  {
+    "category": "Antipasti di mare e sfiziosità",
+    "name": "Antipasto \"C'era una volta\"",
+    "ingredients": "Selezione di antipasti di mare dello chef",
+    "price": "€ 16,00"
+  },
+  {
+    "category": "Antipasti di mare e sfiziosità",
+    "name": "Spada carpacciato in marinata leggera",
+    "ingredients": "Carpaccio di pesce spada, marinatura leggera",
+    "price": "€ 12,00"
+  },
+  {
+    "category": "Antipasti di mare e sfiziosità",
+    "name": "Insalata di polipo con rucola e pomodorini",
+    "ingredients": "Polipo, rucola, pomodorini",
+    "price": "€ 13,00"
+  },
+  {
+    "category": "Antipasti di mare e sfiziosità",
+    "name": "Insalata di mare",
+    "ingredients": "Misto di frutti di mare e verdure",
+    "price": "€ 12,00"
+  },
+  {
+    "category": "Antipasti di mare e sfiziosità",
+    "name": "Cozze: alla marinara, tarantina, pepata",
+    "ingredients": "Cozze preparate a scelta tra marinara, tarantina o pepata",
+    "price": "€ 13,00"
+  },
+  {
+    "category": "Antipasti di mare e sfiziosità",
+    "name": "Sautè di cozze e vongole (piccante)",
+    "ingredients": "Cozze, vongole, aglio, olio, peperoncino",
+    "price": "€ 15,00"
+  },
+  {
+    "category": "Antipasti di mare e sfiziosità",
+    "name": "Bruschetta ai sapori di mare",
+    "ingredients": "Pane tostato con condimento a base di pesce",
+    "price": "€ 9,00"
+  },
+  {
+    "category": "Antipasti di mare e sfiziosità",
+    "name": "Melanzane alla beccafico",
+    "ingredients": "Melanzane ripiene in stile siciliano",
+    "price": "€ 8,00"
+  },
+  {
+    "category": "Antipasti di salumi e...",
+    "name": "Carne cruda alla piemontese",
+    "ingredients": "Battuta di manzo Fassona, condimenti",
+    "price": "€ 15,00"
+  },
+  {
+    "category": "Antipasti di salumi e...",
+    "name": "Ravioli di bresaola con ricotta e balsamico",
+    "ingredients": "Bresaola, ricotta, aceto balsamico",
+    "price": "€ 10,00"
+  },
+  {
+    "category": "Antipasti di salumi e...",
+    "name": "Affettato misto di salumi",
+    "ingredients": "Selezione di salumi tipici",
+    "price": "€ 12,00"
+  },
+  {
+    "category": "Antipasti di salumi e...",
+    "name": "Affettato misto di salumi e formaggi",
+    "ingredients": "Selezione di salumi e formaggi tipici",
+    "price": "€ 16,00"
+  },
+  {
+    "category": "Antipasti di salumi e...",
+    "name": "Prosciutto cotto e bufala",
+    "ingredients": "Prosciutto cotto di alta qualità, mozzarella di bufala",
+    "price": "€ 9,00"
+  },
+  {
+    "category": "Antipasti di salumi e...",
+    "name": "Crudo e...",
+    "ingredients": "Prosciutto crudo con melone, ananas o mozzarella di bufala (secondo stagione)",
+    "price": "€ 10,00"
+  },
+  {
+    "category": "Antipasti di salumi e...",
+    "name": "Insalatona dello Chef",
+    "ingredients": "Insalata mista con ingredienti a fantasia dello chef",
+    "price": "€ 9,00"
+  },
+  {
+    "category": "Contorni",
+    "name": "Insalata mista",
+    "ingredients": "Lattuga, radicchio, carote, pomodori",
+    "price": "€ 5,00"
+  },
+  {
+    "category": "Contorni",
+    "name": "Insalata pomodori e mais",
+    "ingredients": "Pomodori, mais",
+    "price": "€ 5,00"
+  },
+  {
+    "category": "Contorni",
+    "name": "Carote olio e limone",
+    "ingredients": "Carote julienne, olio, limone",
+    "price": "€ 5,00"
+  },
+  {
+    "category": "Contorni",
+    "name": "Fagiolini all’uccelletto",
+    "ingredients": "Fagiolini, pomodoro",
+    "price": "€ 5,00"
+  },
+  {
+    "category": "Contorni",
+    "name": "Patatine fritte",
+    "ingredients": "Patate fritte",
+    "price": "€ 5,00"
+  },
+  {
+    "category": "Contorni",
+    "name": "Patate cremolate",
+    "ingredients": "Patate saltate al burro",
+    "price": "€ 5,00"
+  },
+  {
+    "category": "Contorni",
+    "name": "Spinaci al burro",
+    "ingredients": "Spinaci, burro",
+    "price": "€ 5,00"
+  },
+  {
+    "category": "Contorni",
+    "name": "Verdure alla griglia",
+    "ingredients": "Selezione di verdure di stagione grigliate",
+    "price": "€ 6,00"
+  },
+  {
+    "category": "Primi di Mare",
+    "name": "Bavette all'astice",
+    "ingredients": "Bavette, astice",
+    "price": "€ 18,00"
+  },
+  {
+    "category": "Primi di Mare",
+    "name": "Linguine della casa (coppo)",
+    "ingredients": "Linguine con frutti di mare",
+    "price": "€ 15,00"
+  },
+  {
+    "category": "Primi di Mare",
+    "name": "Linguine della casa (coppo) - piccolo",
+    "ingredients": "Linguine con frutti di mare (porzione ridotta)",
+    "price": "€ 13,50"
+  },
+  {
+    "category": "Primi di Mare",
+    "name": "Risotto alla pescatora",
+    "ingredients": "Riso, frutti di mare",
+    "price": "€ 14,00"
+  },
+  {
+    "category": "Primi di Mare",
+    "name": "Risotto al pesce persico",
+    "ingredients": "Riso, filetto di pesce persico",
+    "price": "€ 13,00"
+  },
+  {
+    "category": "Primi di Mare",
+    "name": "Spaghetti allo scoglio",
+    "ingredients": "Spaghetti, misto di frutti di mare con guscio",
+    "price": "€ 14,00"
+  },
+  {
+    "category": "Primi di Mare",
+    "name": "Spaghetti alle vongole veraci",
+    "ingredients": "Spaghetti, vongole veraci",
+    "price": "€ 13,00"
+  },
+  {
+    "category": "Primi di Mare",
+    "name": "Tagliatelle salmone e radicchio",
+    "ingredients": "Tagliatelle, salmone, radicchio",
+    "price": "€ 12,00"
+  },
+  {
+    "category": "Primi di Mare",
+    "name": "Tagliatelle mari e monti",
+    "ingredients": "Tagliatelle, frutti di mare, funghi",
+    "price": "€ 13,00"
+  },
+  {
+    "category": "Primi di Mare",
+    "name": "Tortelloni capesante e gamberi",
+    "ingredients": "Tortelloni ripieni di capesante e gamberi",
+    "price": "€ 14,00"
+  },
+  {
+    "category": "Primi di Terra",
+    "name": "Penne pomodorini, rucola e ricotta",
+    "ingredients": "Penne, pomodorini, rucola, ricotta",
+    "price": "€ 11,00"
+  },
+  {
+    "category": "Primi di Terra",
+    "name": "Penne alla russa",
+    "ingredients": "Penne, panna, prosciutto, funghi",
+    "price": "€ 11,00"
+  },
+  {
+    "category": "Primi di Terra",
+    "name": "Pappardelle al ragù di selvaggina",
+    "ingredients": "Pappardelle, ragù di cacciagione",
+    "price": "€ 15,00"
+  },
+  {
+    "category": "Primi di Terra",
+    "name": "Quadroni radicchio e zola",
+    "ingredients": "Quadroni, radicchio, gorgonzola",
+    "price": "€ 13,00"
+  },
+  {
+    "category": "Primi di Terra",
+    "name": "Ravioli ai funghi porcini",
+    "ingredients": "Ravioli, funghi porcini",
+    "price": "€ 15,00"
+  },
+  {
+    "category": "Primi di Terra",
+    "name": "Spaghetti al pomodoro fresco, basilico e prosciutto di Parma",
+    "ingredients": "Spaghetti, pomodoro fresco, basilico, prosciutto di Parma",
+    "price": "€ 11,00"
+  },
+  {
+    "category": "Primi di Terra",
+    "name": "Risotto alla mela verde e pecorino",
+    "ingredients": "Riso, mela verde, pecorino",
+    "price": "€ 12,00"
+  },
+  {
+    "category": "Primi di Terra",
+    "name": "Risotto agli asparagi",
+    "ingredients": "Riso, asparagi",
+    "price": "€ 12,00"
+  },
+  {
+    "category": "Primi di Terra",
+    "name": "Risotto prosciutto e zola",
+    "ingredients": "Riso, prosciutto, gorgonzola",
+    "price": "€ 13,00"
+  },
+  {
+    "category": "Primi di Terra",
+    "name": "Risotto ai funghi porcini",
+    "ingredients": "Riso, funghi porcini",
+    "price": "€ 13,00"
+  },
+  {
+    "category": "Secondi di Mare",
+    "name": "Frittura misto mare con verdure",
+    "ingredients": "Pesce misto fritto, verdure fritte",
+    "price": "€ 17,00"
+  },
+  {
+    "category": "Secondi di Mare",
+    "name": "Calamari fritti",
+    "ingredients": "Anelli di calamaro fritti",
+    "price": "€ 13,00"
+  },
+  {
+    "category": "Secondi di Mare",
+    "name": "Grigliata mista",
+    "ingredients": "Selezione di pesce alla griglia",
+    "price": "€ 23,00"
+  },
+  {
+    "category": "Secondi di Mare",
+    "name": "Gamberi alla griglia",
+    "ingredients": "Gamberoni grigliati",
+    "price": "€ 18,00"
+  },
+  {
+    "category": "Secondi di Mare",
+    "name": "Gamberi rossi all'anice stellata",
+    "ingredients": "Gamberi rossi, anice stellata",
+    "price": "€ 18,00"
+  },
+  {
+    "category": "Secondi di Mare",
+    "name": "Tagliata di spada agli agrumi",
+    "ingredients": "Filetto di pesce spada, agrumi",
+    "price": "€ 16,00"
+  },
+  {
+    "category": "Secondi di Mare",
+    "name": "Filetto di branzino al limone",
+    "ingredients": "Filetto di branzino, limone",
+    "price": "€ 12,00"
+  },
+  {
+    "category": "Secondi di Mare",
+    "name": "Filetto di orata all'altoatesina",
+    "ingredients": "Filetto di orata, speck, erbe aromatiche",
+    "price": "€ 12,00"
+  },
+  {
+    "category": "Secondi di Mare",
+    "name": "Spiedini di gamberoni gratinati al rosmarino",
+    "ingredients": "Gamberoni, panatura, rosmarino",
+    "price": "€ 18,00"
+  },
+  {
+    "category": "Secondi di Terra",
+    "name": "Tagliata di manzo al formaggio di fossa e balsamico",
+    "ingredients": "Controfiletto di manzo, formaggio di fossa, aceto balsamico",
+    "price": "€ 16,00"
+  },
+  {
+    "category": "Secondi di Terra",
+    "name": "Tagliata di manzo ai funghi porcini",
+    "ingredients": "Controfiletto di manzo, funghi porcini",
+    "price": "€ 16,00"
+  },
+  {
+    "category": "Secondi di Terra",
+    "name": "Filetto di manzo bardato",
+    "ingredients": "Filetto di manzo, pancetta",
+    "price": "€ 18,00"
+  },
+  {
+    "category": "Secondi di Terra",
+    "name": "Filetto di manzo con fonduta di pecorino",
+    "ingredients": "Filetto di manzo, fonduta di pecorino",
+    "price": "€ 18,00"
+  },
+  {
+    "category": "Secondi di Terra",
+    "name": "Filetto di manzo al pepe verde",
+    "ingredients": "Filetto di manzo, salsa al pepe verde",
+    "price": "€ 18,00"
+  },
+  {
+    "category": "Secondi di Terra",
+    "name": "Filetto di manzo alla griglia",
+    "ingredients": "Filetto di manzo grigliato",
+    "price": "€ 16,00"
+  },
+  {
+    "category": "Secondi di Terra",
+    "name": "Bocconcini di manzo ai funghi porcini",
+    "ingredients": "Spezzatino di manzo, funghi porcini",
+    "price": "€ 16,00"
+  },
+  {
+    "category": "Secondi di Terra",
+    "name": "Costata alla fiorentina",
+    "ingredients": "Bistecca di manzo (prezzo al kg)",
+    "price": "€ 45,00"
+  },
+  {
+    "category": "Secondi di Terra",
+    "name": "Grigliata mista",
+    "ingredients": "Selezione di carni alla griglia",
+    "price": "€ 20,00"
+  }
+]

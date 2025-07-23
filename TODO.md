@@ -12,25 +12,63 @@ Questo file traccia le attività necessarie per completare la landing page della
 
 ## Fase 3: Refactoring Grafico con Tailwind CSS
 
-- [ ] **Migrazione a Tailwind CSS:**
-    - [ ] Rimuovere `bootstrap`, `react-bootstrap` e `react-router-bootstrap`.
-    - [ ] Installare e configurare `tailwindcss`, `postcss`, `autoprefixer`.
-- [ ] **Implementazione del Design System:**
-    - [ ] Configurare `tailwind.config.js` con la palette di colori e i font personalizzati (`Playfair Display`, `Lato`).
-    - [ ] Importare i font da Google Fonts in `index.html`.
-    - [ ] Applicare stili globali (es. sfondo scuro) in `index.css`.
-- [ ] **Ricostruzione dei Componenti e delle Pagine:**
-    - [ ] **Header**: Ricostruire con Tailwind, renderlo "sticky".
-    - [ ] **Footer**: Ricostruire con Tailwind.
-    - [ ] **Homepage**: Ridisegnare completamente (`Hero`, `Best Sellers`, `Links`, `Carousel`).
-    - [ ] **Pagine Menu** (`Pizzeria`, `TakeAway`, `Restaurant`): Applicare i nuovi stili, ridisegnare i filtri e i selettori di categoria.
-    - [ ] **Componenti UI**: Ridisegnare `MenuItem`, `Card`, `Button` per coerenza.
-- [ ] **Rifinitura e Test:**
+- [x] **Migrazione a Tailwind CSS:**
+    - [x] Rimuovere `bootstrap`, `react-bootstrap` e `react-router-bootstrap`.
+    - [x] Installare e configurare `tailwindcss`, `postcss`, `autoprefixer`.
+- [x] **Implementazione del Design System:**
+    - [x] Configurare `tailwind.config.js` con la palette di colori e i font personalizzati (`Playfair Display`, `Lato`).
+    - [x] Importare i font da Google Fonts in `index.html`.
+    - [x] Applicare stili globali (es. sfondo chiaro) in `index.css`.
+- [x] **Ricostruzione dei Componenti e delle Pagine:**
+    - [x] **Header**: Ricostruire con Tailwind, renderlo "sticky", rimuovere "Ordina Online".
+    - [x] **Footer**: Ricostruire con Tailwind.
+    - [x] **Homepage**: Ridisegnare completamente (`Hero`, `Best Sellers`, `Links`, `Carousel`).
+    - [x] **Pagine Menu** (`Pizzeria`, `TakeAway`, `Restaurant`): Applicare i nuovi stili, ridisegnare i filtri e i selettori di categoria.
+    - [x] **Componenti UI**: Ridisegnare `MenuItem`, `Card`, `Button` per coerenza.
+- [x] **Adattamento al Tema Chiaro:**
+    - [x] Aggiornare la configurazione Tailwind con nuovi colori chiari.
+    - [x] Adattare tutte le pagine al nuovo tema chiaro (Home, Pizzeria, TakeAway, Restaurant, PrivacyPolicy).
+    - [x] Adattare tutti i componenti al nuovo tema chiaro (Header, Footer, MenuItem).
+    - [x] Rimuovere funzionalità "Ordina Online" da tutto il sito (landing page only).
+
+## Fase 4: Containerizzazione e Deploy
+
+- [x] **Configurazione Docker:**
+    - [x] Creare `docker-compose.yml` per il deploy semplificato.
+    - [x] Creare `Dockerfile` multi-stage per build ottimizzato.
+    - [x] Configurare `nginx.conf` per SPA React con routing corretto.
+    - [x] Aggiungere `.dockerignore` per ottimizzare il build.
+    - [x] Creare documentazione Docker (`README-Docker.md`).
+- [x] **Ottimizzazioni Produzione:**
+    - [x] Configurazione Nginx con compressione Gzip.
+    - [x] Cache aggressivo per asset statici.
+    - [x] Security headers configurati.
+    - [x] Health check endpoint.
+    - [x] Integrazione con rete `web-proxy` per reverse proxy.
+
+## Fase 5: Rifinitura e Test
+
+- [ ] **Verifiche Finali:**
     - [ ] Verificare la coerenza del design in tutto il sito.
     - [ ] Testare la responsività su diverse dimensioni di schermo.
+    - [ ] Controllare che non ci siano errori JavaScript o CSS.
+    - [ ] Verificare che tutte le pagine si carichino correttamente.
+    - [ ] Testare il deploy Docker in ambiente di produzione.
+- [ ] **Contenuti:**
     - [ ] Sostituire i testi e i prezzi con contenuti finali.
+    - [ ] Verificare che tutte le immagini siano ottimizzate.
 
-## Fase 4: Deploy (Opzionale)
+## Fase 6: Deploy (Opzionale)
 
 - [ ] Eseguire il build di produzione del sito.
 - [ ] Eseguire il deploy su un servizio di hosting.
+- [ ] Configurare dominio personalizzato.
+- [ ] Configurare SSL/HTTPS.
+
+## Note
+
+- Il sito è ora configurato come landing page senza funzionalità di ordinazione online.
+- Tutte le pagine sono state adattate al nuovo tema chiaro con palette di colori coerente.
+- Il design system è stato implementato con Tailwind CSS e font personalizzati.
+- La configurazione Docker è pronta per il deploy in produzione con Nginx ottimizzato.
+- Il container è configurato per funzionare con reti reverse proxy esistenti.

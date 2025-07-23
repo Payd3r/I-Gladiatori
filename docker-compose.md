@@ -1,0 +1,117 @@
+crea una piccola configurazione docker per funzionare con un solo container e ngix per esporre correttamente la mia landing page anche su portainer. copia quello che ti ho inviato e usa la stesa rete pubblica, non servono volumi
+
+version: '3.8'
+
+services:
+  # Database MySQL
+  db:
+    image: mysql:8.0
+    container_name: sore_db
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-rootpassword}
+      MYSQL_DATABASE: ${MYSQL_DATABASE:-sore}
+      MYSQL_USER: ${MYSQL_USER:-sore_user}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:-sore_password}
+      MYSQL_INNODB_BUFFER_POOL_SIZE: 256M
+      MYSQL_INNODB_LOG_FILE_SIZE: 128M
+      MYSQL_INNODB_FLUSH_LOG_AT_TRX_COMMIT: 1
+      MYSQL_INNODB_FLUSH_METHOD: O_DIRECT
+      MYSQL_ROOT_HOST: '%'
+      MYSQL_ALLOW_EMPTY_PASSWORD: 'no'
+    command: --default-authentication-plugin=mysql_native_password
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./backend/db.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    networks:
+      - sore-internal
+
+  # Backend Node.js
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: sore_backend
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+      PORT: 3002
+      DB_HOST: db
+      DB_USER: ${MYSQL_USER:-sore_user}
+      DB_PASSWORD: ${MYSQL_PASSWORD:-sore_password}
+      DB_NAME: ${MYSQL_DATABASE:-sore}
+      DB_PORT: 3306
+      JWT_SECRET: ${JWT_SECRET:-your_jwt_secret_here}
+      GOOGLE_APPLICATION_CREDENTIALS: /app/config/google-vision-credentials.json
+      GOOGLE_CLOUD_PROJECT_ID: ${GOOGLE_CLOUD_PROJECT_ID:-carbon-airlock-358411}
+      GOOGLE_CLOUD_PRIVATE_KEY_ID: ${GOOGLE_CLOUD_PRIVATE_KEY_ID:-1e2b77625aed67d73e53b35088bf4285b55352d5}
+      GOOGLE_CLOUD_PRIVATE_KEY: ${GOOGLE_CLOUD_PRIVATE_KEY}
+      GOOGLE_CLOUD_CLIENT_EMAIL: ${GOOGLE_CLOUD_CLIENT_EMAIL:-sore-672@carbon-airlock-358411.iam.gserviceaccount.com}
+      GOOGLE_CLOUD_CLIENT_ID: ${GOOGLE_CLOUD_CLIENT_ID:-106474750802467922383}
+      SPOTIFY_CLIENT_ID: ${SPOTIFY_CLIENT_ID}
+      SPOTIFY_CLIENT_SECRET: ${SPOTIFY_CLIENT_SECRET}
+      SPOTIFY_REDIRECT_URI: ${SPOTIFY_REDIRECT_URI}
+    volumes:
+      - backend_media:/app/media
+      - backend_config:/app/config
+      - backend_queue:/app/queue
+    depends_on:
+      - db
+    networks:
+      - sore-internal
+      - web-proxy
+
+  # Frontend React
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      args:
+        VITE_API_BASE_URL: ${VITE_API_BASE_URL:-https://sore.andrea-mauri.duckdns.org}
+    container_name: sore_frontend
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+    volumes:
+      - frontend_build:/app/dist
+    depends_on:
+      - backend
+    networks:
+      - sore-internal
+      - web-proxy
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: sore_phpmyadmin
+    restart: unless-stopped
+    environment:
+      PMA_HOST: db
+      PMA_USER: ${MYSQL_USER:-sore_user}
+      PMA_PASSWORD: ${MYSQL_PASSWORD:-sore_password}
+      PMA_ARBITRARY: 1
+    ports:
+      - "8080:80"
+    depends_on:
+      - db
+    networks:
+      - sore-internal
+
+volumes:
+  mysql_data:
+    driver: local
+  backend_media:
+    driver: local
+  backend_config:
+    driver: local
+  backend_queue:
+    driver: local
+  frontend_build:
+    driver: local
+
+networks:
+  web-proxy:
+    external: true
+  sore-internal:
+    driver: bridge 
+
+

@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  background-color: #F8F6F0;
+  color: #374151;
+  font-family: 'Lato', 'Open Sans', 'Roboto', sans-serif;
+  min-height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', 'Oswald', 'Lato', serif, sans-serif;
+}

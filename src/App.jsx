@@ -11,7 +11,7 @@ import './App.css';
 
 function App() {
   return (
-    <div className="bg-primary-black text-primary-white font-body">
+    <div className="bg-primary-cream text-secondary-gray-dark font-body">
       <Header />
       <main>
         <Routes>

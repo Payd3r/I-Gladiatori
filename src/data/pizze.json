@@ -1,0 +1,563 @@
+[
+  {
+    "name": "Margherita",
+    "ingredients": "Pomodoro, Mozzarella, Basilico",
+    "price": "€ 7,00",
+    "category": "Le Classiche",
+    "best_seller": true
+  },
+  {
+    "name": "Diavola",
+    "ingredients": "Pomodoro, Mozzarella, Salame piccante",
+    "price": "€ 8,50",
+    "category": "Le Classiche",
+    "best_seller": true
+  },
+  {
+    "name": "Capricciosa Speciale",
+    "ingredients": "Pomodoro, Mozzarella, Funghi, Prosciutto, Olive, Carciofini",
+    "price": "€ 9,50",
+    "category": "Le Speciali"
+  },
+  {
+    "name": "Quattro Formaggi Speciale",
+    "ingredients": "Mozzarella, Gorgonzola, Fontina, Parmigiano",
+    "price": "€ 9,00",
+    "category": "Le Speciali"
+  },
+  {
+    "name": "Gladiatore",
+    "ingredients": "Pomodoro, Mozzarella di Bufala, Salsiccia, Funghi Porcini",
+    "price": "€ 12,00",
+    "category": "Le Speciali",
+    "best_seller": true
+  },
+  {
+    "name": "Vegetariana",
+    "ingredients": "Pomodoro, Mozzarella, Verdure di stagione",
+    "price": "€ 8,00",
+    "category": "Le Vegetariane"
+  },
+  {
+    "name": "Adamo",
+    "ingredients": "mozzarella, zola, pancetta, mela",
+    "price": "€ 7,00",
+    "category": "Le Bianche"
+  },
+  {
+    "name": "Affumicata",
+    "ingredients": "mozzarella, provola affumicata, fontina, pomodoro fresco, grana",
+    "price": "€ 8,00",
+    "category": "Le Bianche"
+  },
+  {
+    "name": "Alda",
+    "ingredients": "mozzarella, pomodoro, peperoni, zucchine",
+    "price": "€ 6,50",
+    "category": "Le Vegetariane"
+  },
+  {
+    "name": "Americana",
+    "ingredients": "pomodoro, mozzarella, wurstel, patatine fritte",
+    "price": "€ 7,00",
+    "category": "Le Speciali"
+  },
+  {
+    "name": "Asparagi e uovo",
+    "ingredients": "mozzarella, asparagi, uovo, grana",
+    "price": "€ 7,00",
+    "category": "Le Vegetariane"
+  },
+  {
+    "name": "B.R.G.",
+    "ingredients": "bresaola, rucola, grana, pomodoro, mozzarella",
+    "price": "€ 7,00",
+    "category": "Le Speciali"
+  },
+  {
+    "name": "Bacon",
+    "ingredients": "mozzarella, pomodoro, pancetta, uovo, grana",
+    "price": "€ 7,50",
+    "category": "Le Speciali"
+  },
+  {
+    "name": "Big",
+    "ingredients": "mozzarella, pomodoro, salsiccia, cipolla",
+    "price": "€ 7,50",
+    "category": "Le Speciali"
+  },
+  {
+    "name": "Biancaneve",
+    "ingredients": "mozzarella",
+    "price": "€ 5,00",
+    "category": "Le Bianche"
+  },
+  {
+    "name": "Bismark",
+    "ingredients": "mozzarella, pomodoro, prosciutto cotto, uovo, grana",
+    "price": "€ 6,50",
+    "category": "Le Speciali"
+  },
+  {
+    "name": "Bomba",
+    "ingredients": "mozzarella, pomodoro, tonno, cipolla, zola",
+    "price": "€ 7,00",
+    "category": "Le Speciali"
+  },
+  {
+    "name": "Boscaiola",
+    "ingredients": "mozzarella, pomodoro, porcini, panna, prosciutto cotto, origano",
+    "price": "€ 8,50",
+    "category": "Le Speciali"
+  },
+  {
+    "name": "Braccio di ferro",
+    "ingredients": "mozzarella, pomodoro, speck, spinaci, porcini",
+    "price": "€ 8,50",
+    "category": "Le Speciali"
+  },
+  {
+    "name": "Bresaola",
+    "ingredients": "mozzarella, pomodoro, bresaola",
+    "price": "€ 7,00",
+    "category": "Le Speciali"
+  },
+  {
+    "name": "Bufalina",
+    "ingredients": "mozzarella di bufala, pomodoro, basilico, origano",
+    "price": "€ 8,00",
+    "category": "Le Classiche"
+  },
+  {
+    "name": "Burrata con crudo",
+    "ingredients": "pomodoro, burrata, prosciutto crudo",
+    "price": "€ 11,00",
+    "category": "Le Speciali"
+  },
+  {
+    "name": "Calamari",
+    "ingredients": "pomodoro, mozzarella, calamari fritti",
+    "price": "€ 10,00",
+    "category": "Dal Mare"
+  },
+  {
+    "name": "Calzone liscio",
+    "ingredients": "mozzarella, pomodoro, prosciutto cotto",
+    "price": "€ 5,50",
+    "category": "I Calzoni"
+  },
+  {
+    "name": "Calzone farcito",
+    "ingredients": "mozzarella, pomodoro, prosciutto cotto, farcitura",
+    "price": "€ 6,00",
+    "category": "I Calzoni"
+  },
+  {
+    "name": "Calzone speciale",
+    "ingredients": "mozzarella, pomodoro, prosciutto cotto, funghi, carciofi, ricotta, uovo",
+    "price": "€ 8,00",
+    "category": "I Calzoni"
+  },
+  {
+    "name": "Capricciosa",
+    "ingredients": "mozzarella, pomodoro, prosciutto cotto, funghi, carciofi",
+    "price": "€ 7,00",
+    "category": "Le Classiche"
+  },
+  {
+    "name": "Caraibi",
+    "ingredients": "mozzarella, pomodoro, gamberi, zucchine",
+    "price": "€ 8,00",
+    "category": "Dal Mare"
+  },
+  {
+    "name": "Carbonara",
+    "ingredients": "mozzarella, pomodoro, pancetta, panna, uovo, pepe, grana",
+    "price": "€ 8,00",
+    "category": "Le Speciali"
+  },
+  {
+    "name": "Carciofi",
+    "ingredients": "mozzarella, pomodoro, carciofi",
+    "price": "€ 6,00",
+    "category": "Le Vegetariane"
+  },
+  {
+    "name": "C'era una volta",
+    "ingredients": "mozzarella, pomodoro, a piacere del pizzaiolo",
+    "price": "€ 9,50",
+    "category": "Le Speciali"
+  },
+  {
+    "name": "Dama",
+    "ingredients": "mozzarella, pomodoro, ricotta, salsiccia, porcini",
+    "price": "€ 8,50",
+    "category": "Le Speciali"
+  },
+  {
+    "name": "Eddy",
+    "ingredients": "mozzarella, pomodoro, taleggio, speck, rucola",
+    "price": "€ 7,50",
+    "category": "Le Speciali"
+  },
+  {
+    "name": "Erbivora",
+    "ingredients": "mozzarella, spinaci, asparagi, rucola, pomodoro fresco, grana",
+    "price": "€ 7,50",
+    "category": "Le Bianche"
+  },
+  {
+    "name": "Eva",
+    "ingredients": "mozzarella, pomodoro, zola, mela",
+    "price": "€ 6,50",
+    "category": "Le Speciali"
+  },
+  {
+    "name": "Fantastica",
+    "ingredients": "mozzarella, pomodoro, salame piccante, salsiccia, ricotta, spinaci, grana",
+    "price": "€ 9,00",
+    "category": "Le Speciali"
+  },
+  {
+    "name": "Frutti di mare",
+    "ingredients": "pomodoro, insalata di mare, prezzemolo, origano",
+    "price": "€ 8,50",
+    "category": "Dal Mare"
+  },
+  {
+    "name": "Gamberetti",
+    "ingredients": "mozzarella, pomodoro, gamberetti, origano",
+    "price": "€ 7,00",
+    "category": "Dal Mare"
+  },
+  {
+    "name": "Germania",
+    "ingredients": "mozzarella, pomodoro, crauti, wurstel, senape, origano",
+    "price": "€ 8,00",
+    "category": "Le Speciali"
+  },
+  {
+    "name": "Golosa",
+    "ingredients": "mozzarella, pomodoro, gamberetti, parma, rucola",
+    "price": "€ 9,00",
+    "category": "Dal Mare"
+  },
+  {
+    "name": "I Gladiatori",
+    "ingredients": "mozzarella di bufala, pomodoro, salame piccante, peperoni, cipolla, pomodoro fresco",
+    "price": "€ 9,00",
+    "category": "Le Speciali"
+  },
+  {
+    "name": "Lingua di suocera",
+    "ingredients": "mozzarella, pomodoro, salame piccante, peperoni, cipolla, zola",
+    "price": "€ 9,00",
+    "category": "Le Speciali"
+  },
+  {
+    "name": "Mali",
+    "ingredients": "mozzarella, pomodoro, prosciutto cotto, funghi, carciofi, frutti di mare",
+    "price": "€ 9,00",
+    "category": "Dal Mare"
+  },
+  {
+    "name": "Mantova",
+    "ingredients": "mozzarella, pomodoro, pancetta mantovana, origano",
+    "price": "€ 6,50",
+    "category": "Le Speciali"
+  },
+  {
+    "name": "Mare e Monti",
+    "ingredients": "mozzarella, pomodoro, frutti di mare, porcini, origano, pomodoro fresco",
+    "price": "€ 9,00",
+    "category": "Dal Mare"
+  },
+  {
+    "name": "Margherita Classica",
+    "ingredients": "mozzarella, pomodoro",
+    "price": "€ 5,00",
+    "category": "Le Classiche"
+  },
+  {
+    "name": "Marinara",
+    "ingredients": "pomodoro, aglio, origano",
+    "price": "€ 4,00",
+    "category": "Le Classiche"
+  },
+  {
+    "name": "Mediterranea",
+    "ingredients": "mozzarella, pomodoro, acciughe, aglio, olive",
+    "price": "€ 7,00",
+    "category": "Dal Mare"
+  },
+  {
+    "name": "Melanzane",
+    "ingredients": "mozzarella, pomodoro, melanzane, grana",
+    "price": "€ 6,00",
+    "category": "Le Vegetariane"
+  },
+  {
+    "name": "Messicana",
+    "ingredients": "mozzarella, pomodoro, fagioli, pancetta, peperoncino",
+    "price": "€ 6,50",
+    "category": "Le Speciali"
+  },
+  {
+    "name": "Napoli",
+    "ingredients": "mozzarella, pomodoro, acciughe, origano",
+    "price": "€ 5,50",
+    "category": "Le Classiche"
+  },
+  {
+    "name": "Ortolana",
+    "ingredients": "mozzarella, pomodoro, verdura mista, grana",
+    "price": "€ 7,50",
+    "category": "Le Vegetariane"
+  },
+  {
+    "name": "Paesana",
+    "ingredients": "mozzarella, patate, scamorza affumicata, scaglie di grana",
+    "price": "€ 7,00",
+    "category": "Le Bianche"
+  },
+  {
+    "name": "Parma",
+    "ingredients": "mozzarella, pomodoro, prosciutto crudo",
+    "price": "€ 7,00",
+    "category": "Le Speciali"
+  },
+  {
+    "name": "Parmigiana",
+    "ingredients": "mozzarella, pomodoro, melanzane, prosciutto cotto, grana",
+    "price": "€ 7,50",
+    "category": "Le Speciali"
+  },
+  {
+    "name": "Patatine",
+    "ingredients": "pomodoro, mozzarella, patatine fritte",
+    "price": "€ 6,00",
+    "category": "Le Classiche"
+  },
+  {
+    "name": "Peperoni, Capperi e Acciughe",
+    "ingredients": "mozzarella, pomodoro, peperoni, capperi, acciughe",
+    "price": "€ 6,50",
+    "category": "Le Speciali"
+  },
+  {
+    "name": "Porcini",
+    "ingredients": "mozzarella, pomodoro, porcini, origano",
+    "price": "€ 8,00",
+    "category": "Le Vegetariane"
+  },
+  {
+    "name": "Primavera",
+    "ingredients": "mozzarella, pomodoro fresco, rucola, grana",
+    "price": "€ 7,00",
+    "category": "Le Bianche"
+  },
+  {
+    "name": "Prosciutto",
+    "ingredients": "mozzarella, pomodoro, prosciutto cotto",
+    "price": "€ 6,00",
+    "category": "Le Classiche"
+  },
+  {
+    "name": "Prosciutto e Funghi",
+    "ingredients": "mozzarella, pomodoro, prosciutto cotto, funghi",
+    "price": "€ 7,00",
+    "category": "Le Classiche"
+  },
+  {
+    "name": "Pugliese",
+    "ingredients": "mozzarella, pomodoro, cipolla, pomodoro fresco, grana",
+    "price": "€ 6,00",
+    "category": "Le Vegetariane"
+  },
+  {
+    "name": "Quattro Formaggi",
+    "ingredients": "mozzarella, formaggi misti",
+    "price": "€ 7,00",
+    "category": "Le Classiche"
+  },
+  {
+    "name": "Quattro Stagioni",
+    "ingredients": "mozzarella, pomodoro, funghi, prosciutto cotto, carciofi",
+    "price": "€ 6,00",
+    "category": "Le Classiche"
+  },
+  {
+    "name": "Ricotta e Spinaci",
+    "ingredients": "mozzarella, pomodoro, spinaci, ricotta, grana",
+    "price": "€ 6,00",
+    "category": "Le Vegetariane"
+  },
+  {
+    "name": "Romana",
+    "ingredients": "mozzarella, pomodoro, capperi, acciughe, origano",
+    "price": "€ 5,50",
+    "category": "Le Classiche"
+  },
+  {
+    "name": "Rustica",
+    "ingredients": "mozzarella, pomodoro, salame piccante, pecorino",
+    "price": "€ 6,50",
+    "category": "Le Speciali"
+  },
+  {
+    "name": "Salame Dolce o Piccante",
+    "ingredients": "mozzarella, pomodoro, salame",
+    "price": "€ 6,00",
+    "category": "Le Classiche"
+  },
+  {
+    "name": "Salmone",
+    "ingredients": "mozzarella, pomodoro, salmone affumicato",
+    "price": "€ 9,00",
+    "category": "Dal Mare"
+  },
+  {
+    "name": "Salsiccia",
+    "ingredients": "pomodoro, mozzarella, salsiccia",
+    "price": "€ 7,00",
+    "category": "Le Speciali"
+  },
+  {
+    "name": "Salsiccia e Friarielli",
+    "ingredients": "mozzarella, cime di rapa, salsiccia",
+    "price": "€ 8,00",
+    "category": "Le Bianche"
+  },
+  {
+    "name": "Saporita",
+    "ingredients": "mozzarella, pomodoro, pecorino, cipolla, acciughe, olive",
+    "price": "€ 7,50",
+    "category": "Le Speciali"
+  },
+  {
+    "name": "Sela",
+    "ingredients": "mozzarella, pomodoro, tonno, mais, rucola",
+    "price": "€ 7,00",
+    "category": "Dal Mare"
+  },
+  {
+    "name": "Siciliana",
+    "ingredients": "pomodoro, acciughe, capperi, origano, pomodoro fresco, olive",
+    "price": "€ 6,00",
+    "category": "Le Classiche"
+  },
+  {
+    "name": "Sombrero",
+    "ingredients": "mozzarella, pomodoro, cipolla, fagioli",
+    "price": "€ 6,00",
+    "category": "Le Speciali"
+  },
+  {
+    "name": "Speciale",
+    "ingredients": "mozzarella, pomodoro, wurstel, mais, porcini, rucola",
+    "price": "€ 9,00",
+    "category": "Le Speciali"
+  },
+  {
+    "name": "Speck e Zola",
+    "ingredients": "mozzarella, pomodoro, speck, zola",
+    "price": "€ 7,00",
+    "category": "Le Speciali"
+  },
+  {
+    "name": "Tirolese",
+    "ingredients": "mozzarella, pomodoro, speck, spinaci, grana",
+    "price": "€ 7,00",
+    "category": "Le Speciali"
+  },
+  {
+    "name": "Tonno e cipolla",
+    "ingredients": "mozzarella, pomodoro, tonno, cipolla",
+    "price": "€ 7,00",
+    "category": "Dal Mare"
+  },
+  {
+    "name": "Tony",
+    "ingredients": "mozzarella di bufala, pomodoro fresco, gamberetti, rucola",
+    "price": "€ 9,00",
+    "category": "Le Bianche"
+  },
+  {
+    "name": "Trevisana",
+    "ingredients": "mozzarella, pomodoro, trevisana, grana",
+    "price": "€ 6,00",
+    "category": "Le Vegetariane"
+  },
+  {
+    "name": "Uovo e Spinaci",
+    "ingredients": "mozzarella, pomodoro, spinaci, uovo, grana",
+    "price": "€ 6,00",
+    "category": "Le Vegetariane"
+  },
+  {
+    "name": "Vale",
+    "ingredients": "mozzarella di bufala, pomodoro, speck, funghi porcini, grana",
+    "price": "€ 9,00",
+    "category": "Le Speciali"
+  },
+  {
+    "name": "Valtellina",
+    "ingredients": "mozzarella, pomodoro, taleggio, bresaola",
+    "price": "€ 7,50",
+    "category": "Le Speciali"
+  },
+  {
+    "name": "Viziata",
+    "ingredients": "mozzarella, pomodoro, pancetta, wurstel, salsiccia",
+    "price": "€ 8,00",
+    "category": "Le Speciali"
+  },
+  {
+    "name": "Wurstel",
+    "ingredients": "mozzarella, pomodoro, wurstel",
+    "price": "€ 6,00",
+    "category": "Le Classiche"
+  },
+  {
+    "name": "Focaccia Liscia",
+    "ingredients": "rosmarino/origano, olio, grana",
+    "price": "€ 3,00",
+    "category": "Le Focacce"
+  },
+  {
+    "name": "Focaccia alle Verdure",
+    "ingredients": "verdure miste, olio, grana",
+    "price": "€ 6,00",
+    "category": "Le Focacce"
+  },
+  {
+    "name": "Focaccia Speciale",
+    "ingredients": "a piacere del pizzaiolo",
+    "price": "€ 5,50",
+    "category": "Le Focacce"
+  },
+  {
+    "name": "Focaccia alla Nutella",
+    "ingredients": "nutella",
+    "price": "€ 5,00",
+    "category": "Le Focacce"
+  },
+  {
+    "name": "Focaccia con mortadella",
+    "ingredients": "mortadella, burrata, granella di pistacchio",
+    "price": "€ 10,00",
+    "category": "Le Focacce"
+  },
+  {
+    "name": "Focaccia Dani",
+    "ingredients": "crudo, insalata, gamberetti, salsa rosa",
+    "price": "€ 7,50",
+    "category": "Le Focacce"
+  },
+  {
+    "name": "Focaccia crudaiola",
+    "ingredients": "parma, pomodorini, mozzarella di bufala, grana",
+    "price": "€ 8,00",
+    "category": "Le Focacce"
+  }
+]
