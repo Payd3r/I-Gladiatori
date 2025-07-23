@@ -1,5 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { FaPizzaSlice, FaFilter, FaTimes, FaStar } from 'react-icons/fa';
+import CollapsibleFilters from '../components/CollapsibleFilters';
 import pizze from '../data/pizze.json';
 
 function Pizzeria() {
@@ -87,64 +88,58 @@ function Pizzeria() {
       {/* Ingredient Filters */}
       <section className="py-12 bg-primary-cream">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-8">
-            <div className="flex items-center justify-center mb-4">
-              <FaFilter className="text-2xl text-secondary-gray-dark mr-2" />
-              <h2 className="font-heading text-3xl text-secondary-gray-dark">Filtra per Ingredienti</h2>
-            </div>
-            <div className="w-24 h-1 bg-primary-yellow mx-auto"></div>
-          </div>
-
-          {/* Selected Ingredients */}
-          {selectedIngredients.length > 0 && (
-            <div className="mb-8">
-              <div className="flex items-center justify-between mb-4">
-                <h3 className="font-bold text-secondary-gray-dark">
-                  Ingredienti selezionati ({selectedIngredients.length})
-                </h3>
-                <button
-                  onClick={() => setSelectedIngredients([])}
-                  className="text-accent-red hover:text-accent-red/80 font-bold"
-                >
-                  Rimuovi tutti
-                </button>
-              </div>
-              <div className="flex flex-wrap gap-2">
-                {selectedIngredients.map((ingredient) => (
-                  <div
-                    key={ingredient}
-                    className="flex items-center bg-primary-yellow text-primary-black px-3 py-1 rounded-full"
+          <CollapsibleFilters title="Filtra per Ingredienti">
+            {/* Selected Ingredients */}
+            {selectedIngredients.length > 0 && (
+              <div className="mb-8">
+                <div className="flex items-center justify-between mb-4">
+                  <h3 className="font-bold text-secondary-gray-dark">
+                    Ingredienti selezionati ({selectedIngredients.length})
+                  </h3>
+                  <button
+                    onClick={() => setSelectedIngredients([])}
+                    className="text-accent-red hover:text-accent-red/80 font-bold"
                   >
-                    <span className="mr-2">{ingredient}</span>
-                    <button
-                      onClick={() => removeIngredient(ingredient)}
-                      className="hover:text-accent-red"
+                    Rimuovi tutti
+                  </button>
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  {selectedIngredients.map((ingredient) => (
+                    <div
+                      key={ingredient}
+                      className="flex items-center bg-primary-yellow text-primary-black px-3 py-1 rounded-full"
                     >
-                      <FaTimes size={12} />
-                    </button>
-                  </div>
-                ))}
+                      <span className="mr-2">{ingredient}</span>
+                      <button
+                        onClick={() => removeIngredient(ingredient)}
+                        className="hover:text-accent-red"
+                      >
+                        <FaTimes size={12} />
+                      </button>
+                    </div>
+                  ))}
+                </div>
               </div>
-            </div>
-          )}
+            )}
 
-          {/* All Ingredients */}
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3">
-            {allIngredients.map((ingredient) => (
-              <button
-                key={ingredient}
-                onClick={() => addIngredient(ingredient)}
-                disabled={selectedIngredients.includes(ingredient)}
-                className={`px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300 ${
-                  selectedIngredients.includes(ingredient)
-                    ? 'bg-primary-yellow text-primary-black cursor-not-allowed'
-                    : 'bg-white text-secondary-gray-dark hover:bg-primary-yellow/20 hover:text-primary-black border border-secondary-gray-light'
-                }`}
-              >
-                {ingredient}
-              </button>
-            ))}
-          </div>
+            {/* All Ingredients */}
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3">
+              {allIngredients.map((ingredient) => (
+                <button
+                  key={ingredient}
+                  onClick={() => addIngredient(ingredient)}
+                  disabled={selectedIngredients.includes(ingredient)}
+                  className={`px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300 ${
+                    selectedIngredients.includes(ingredient)
+                      ? 'bg-primary-yellow text-primary-black cursor-not-allowed'
+                      : 'bg-white text-secondary-gray-dark hover:bg-primary-yellow/20 hover:text-primary-black border border-secondary-gray-light'
+                  }`}
+                >
+                  {ingredient}
+                </button>
+              ))}
+            </div>
+          </CollapsibleFilters>
         </div>
       </section>
 
@@ -172,13 +167,12 @@ function Pizzeria() {
                         </div>
                       )}
                     </div>
+                    
                     <p className="text-secondary-gray text-sm leading-relaxed mb-4">{pizza.ingredients}</p>
+                    
                     <div className="flex justify-between items-center">
                       <p className="font-bold text-2xl text-accent-red">{pizza.price}</p>
-                      <button className="bg-primary-yellow text-primary-black font-bold py-2 px-4 rounded-full hover:bg-secondary-orange-light transition-colors flex items-center gap-2">
-                        <FaPizzaSlice />
-                        Ordina
-                      </button>
+
                     </div>
                   </div>
                 </div>

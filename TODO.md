@@ -45,8 +45,32 @@ Questo file traccia le attività necessarie per completare la landing page della
     - [x] Security headers configurati.
     - [x] Health check endpoint.
     - [x] Integrazione con rete `web-proxy` per reverse proxy.
+- [x] **Correzione Struttura Progetto:**
+    - [x] Aggiornare configurazione Docker per struttura root (senza cartella app).
+    - [x] Correggere Dockerfile per installare tutte le dipendenze necessarie.
+    - [x] Aggiornare documentazione per nuova struttura del progetto.
 
-## Fase 5: Rifinitura e Test
+## Fase 5: Miglioramenti UX e Interattività
+
+- [x] **Componente ScrollToTop:**
+    - [x] Creare componente per bottone "torna in alto".
+    - [x] Implementare logica di visibilità basata su scroll.
+    - [x] Aggiungere animazioni e transizioni fluide.
+- [x] **Hook useScrollToTop:**
+    - [x] Creare hook personalizzato per scroll automatico.
+    - [x] Integrare con React Router per cambio pagina.
+    - [x] Applicare a tutte le pagine dell'applicazione.
+- [x] **Componente CollapsibleFilters:**
+    - [x] Creare componente per sezioni filtri comprimibili.
+    - [x] Implementare animazioni di apertura/chiusura.
+    - [x] Aggiungere icone per indicare stato.
+- [x] **Integrazione Componenti:**
+    - [x] Applicare CollapsibleFilters alle sezioni filtri delle pagine menu.
+    - [x] Mantenere ingredienti delle pizze sempre visibili.
+    - [x] Configurare categoria di default per pagina Restaurant.
+    - [x] Testare funzionalità su tutte le pagine.
+
+## Fase 6: Rifinitura e Test
 
 - [ ] **Verifiche Finali:**
     - [ ] Verificare la coerenza del design in tutto il sito.
@@ -54,11 +78,12 @@ Questo file traccia le attività necessarie per completare la landing page della
     - [ ] Controllare che non ci siano errori JavaScript o CSS.
     - [ ] Verificare che tutte le pagine si carichino correttamente.
     - [ ] Testare il deploy Docker in ambiente di produzione.
+    - [ ] Testare funzionalità scroll e componenti interattivi.
 - [ ] **Contenuti:**
     - [ ] Sostituire i testi e i prezzi con contenuti finali.
     - [ ] Verificare che tutte le immagini siano ottimizzate.
 
-## Fase 6: Deploy (Opzionale)
+## Fase 7: Deploy (Opzionale)
 
 - [ ] Eseguire il build di produzione del sito.
 - [ ] Eseguire il deploy su un servizio di hosting.
@@ -72,3 +97,10 @@ Questo file traccia le attività necessarie per completare la landing page della
 - Il design system è stato implementato con Tailwind CSS e font personalizzati.
 - La configurazione Docker è pronta per il deploy in produzione con Nginx ottimizzato.
 - Il container è configurato per funzionare con reti reverse proxy esistenti.
+- La struttura del progetto è stata ottimizzata con tutti i file nella root per facilitare il deploy.
+- **Nuove funzionalità UX implementate:**
+  - Scroll automatico in alto quando si cambia pagina.
+  - Bottone "torna in alto" che appare durante lo scroll.
+  - Sezioni filtri comprimibili nelle pagine menu (Pizzeria e TakeAway).
+  - Ingredienti delle pizze sempre visibili per facilità di lettura.
+  - Categoria "Antipasti" selezionata di default nella pagina Restaurant.

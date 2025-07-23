@@ -83,17 +83,7 @@ function Restaurant() {
                       <h3 className="font-heading text-2xl text-secondary-gray-dark">{item.name}</h3>
                       <p className="font-bold text-2xl text-accent-red ml-4">{item.price}</p>
                     </div>
-                    <p className="text-secondary-gray text-sm leading-relaxed mb-6">{item.ingredients}</p>
-                    
-                    <div className="flex gap-3">
-                      <button className="flex-1 bg-primary-yellow text-primary-black font-bold py-3 px-4 rounded-full hover:bg-secondary-orange-light transition-colors flex items-center justify-center gap-2">
-                        <FaUtensils />
-                        Ordina
-                      </button>
-                      <button className="px-4 py-3 border border-primary-yellow text-primary-yellow rounded-full hover:bg-primary-yellow hover:text-primary-black transition-colors">
-                        <FaStar />
-                      </button>
-                    </div>
+                    <p className="text-secondary-gray text-sm leading-relaxed mb-0">{item.ingredients}</p>                    
                   </div>
                 </div>
               ))}
