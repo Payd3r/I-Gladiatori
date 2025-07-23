@@ -4,7 +4,7 @@ services:
   # Frontend React - I Gladiatori Landing Page
   igladiatori-frontend:
     build:
-      context: ./app
+      context: .
       dockerfile: Dockerfile
     container_name: igladiatori_frontend
     restart: unless-stopped
