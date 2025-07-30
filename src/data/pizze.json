@@ -14,13 +14,13 @@
     "best_seller": true
   },
   {
-    "name": "Capricciosa Speciale",
+    "name": "Capricciosa",
     "ingredients": "Pomodoro, Mozzarella, Funghi, Prosciutto, Olive, Carciofini",
     "price": "€ 9,50",
     "category": "Le Speciali"
   },
   {
-    "name": "Quattro Formaggi Speciale",
+    "name": "Quattro Formaggi",
     "ingredients": "Mozzarella, Gorgonzola, Fontina, Parmigiano",
     "price": "€ 9,00",
     "category": "Le Speciali"
@@ -273,7 +273,7 @@
     "category": "Dal Mare"
   },
   {
-    "name": "Margherita Classica",
+    "name": "Margherita",
     "ingredients": "mozzarella, pomodoro",
     "price": "€ 5,00",
     "category": "Le Classiche"
@@ -376,7 +376,7 @@
   },
   {
     "name": "Quattro Formaggi",
-    "ingredients": "mozzarella, formaggi misti",
+    "ingredients": "pomodoro, mozzarella, grana, fontina, gorgonzola",
     "price": "€ 7,00",
     "category": "Le Classiche"
   },
@@ -423,7 +423,7 @@
     "category": "Le Speciali"
   },
   {
-    "name": "Salsiccia e Friarielli",
+    "name": "Friarielle e Salsiccia (bianca)",
     "ingredients": "mozzarella, cime di rapa, salsiccia",
     "price": "€ 8,00",
     "category": "Le Bianche"

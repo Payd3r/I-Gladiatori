@@ -24,9 +24,9 @@ function Home() {
             I Gladiatori
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
-            La vera cucina romana dal 1985. Tradizione, qualità e passione in ogni piatto.
+            Ristorante e Pizzeria ad Albavilla dal 2007 <br />
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">            
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/pizze-asporto"
               className="bg-primary-yellow text-primary-black font-bold font-heading px-8 py-4 rounded-full hover:bg-secondary-orange-light transform hover:scale-105 transition-all duration-300 shadow-lg"
@@ -53,7 +53,7 @@ function Home() {
                 <FaFire className="text-2xl text-primary-yellow" />
               </div>
               <h3 className="font-heading text-2xl text-secondary-gray-dark mb-4">Tradizione</h3>
-              <p className="text-secondary-gray">Oltre 35 anni di esperienza nella cucina romana tradizionale.</p>
+              <p className="text-secondary-gray">Dal 2007 portiamo in tavola i sapori autentici della cucina italiana, con ricette che uniscono gusto e semplicità.</p>
             </div>
 
             <div className="text-center p-8 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
@@ -61,7 +61,7 @@ function Home() {
                 <FaLeaf className="text-2xl text-primary-yellow" />
               </div>
               <h3 className="font-heading text-2xl text-secondary-gray-dark mb-4">Qualità</h3>
-              <p className="text-secondary-gray">Solo ingredienti freschi e di prima qualità per i nostri piatti.</p>
+              <p className="text-secondary-gray">Selezioniamo solo ingredienti freschi e genuini per garantire piatti sempre curati e gustosi.</p>
             </div>
 
             <div className="text-center p-8 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
@@ -69,7 +69,7 @@ function Home() {
                 <FaStar className="text-2xl text-primary-yellow" />
               </div>
               <h3 className="font-heading text-2xl text-secondary-gray-dark mb-4">Passione</h3>
-              <p className="text-secondary-gray">La passione per la cucina si sente in ogni boccone.</p>
+              <p className="text-secondary-gray"> Ogni piatto è preparato con dedizione e amore per la buona cucina, e si sente ad ogni morso.</p>
             </div>
           </div>
         </div>
@@ -92,10 +92,10 @@ function Home() {
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="font-heading text-2xl text-secondary-gray-dark mb-2">Pizza Margherita</h3>
-                <p className="text-secondary-gray mb-4">La classica pizza romana con pomodoro, mozzarella e basilico.</p>
+                <h3 className="font-heading text-2xl text-secondary-gray-dark mb-2">Pizza I Gladiatori</h3>
+                <p className="text-secondary-gray mb-4">Buffalo mozzarella, pomodoro, salame piccante, peperoni, cipolla, pomodoro fresco</p>
                 <div className="flex justify-between items-center">
-                  <span className="font-bold text-2xl text-accent-red">€8,50</span>
+                  <span className="font-bold text-2xl text-accent-red">€9,00</span>
                   <Link to="/pizzeria" className="bg-primary-yellow text-primary-black font-bold px-4 py-2 rounded-full hover:bg-secondary-orange-light transition-colors">
                     Ordina Ora
                   </Link>
@@ -111,10 +111,10 @@ function Home() {
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="font-heading text-2xl text-secondary-gray-dark mb-2">Carbonara</h3>
-                <p className="text-secondary-gray mb-4">La vera carbonara romana con uova, guanciale e pecorino.</p>
+                <h3 className="font-heading text-2xl text-secondary-gray-dark mb-2">Bavette all’Astice</h3>
+                <p className="text-secondary-gray mb-4">Pasta lunga con polpa di astice, ricetta ricca e raffinata</p>
                 <div className="flex justify-between items-center">
-                  <span className="font-bold text-2xl text-accent-red">€12,00</span>
+                  <span className="font-bold text-2xl text-accent-red">€18,00</span>
                   <Link to="/ristorante" className="bg-primary-yellow text-primary-black font-bold px-4 py-2 rounded-full hover:bg-secondary-orange-light transition-colors">
                     Ordina Ora
                   </Link>
@@ -126,14 +126,14 @@ function Home() {
               <div className="relative overflow-hidden">
                 <img src={img4} alt="Tiramisù" className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500" />
                 <div className="absolute top-4 right-4 bg-primary-yellow text-primary-black px-3 py-1 rounded-full text-sm font-bold">
-                  DOLCE
+                  BEST SELLER
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="font-heading text-2xl text-secondary-gray-dark mb-2">Tiramisù</h3>
-                <p className="text-secondary-gray mb-4">Il dolce della casa, fatto con ingredienti selezionati.</p>
+                <h3 className="font-heading text-2xl text-secondary-gray-dark mb-2">Pizza Burrata con Crudo</h3>
+                <p className="text-secondary-gray mb-4">Pomodoro, burrata fresca e prosciutto crudo di Parma</p>
                 <div className="flex justify-between items-center">
-                  <span className="font-bold text-2xl text-accent-red">€6,50</span>
+                  <span className="font-bold text-2xl text-accent-red">€11,00</span>
                   <Link to="/ristorante" className="bg-primary-yellow text-primary-black font-bold px-4 py-2 rounded-full hover:bg-secondary-orange-light transition-colors">
                     Ordina Ora
                   </Link>
@@ -150,8 +150,8 @@ function Home() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="font-heading text-4xl text-white mb-6">Vieni a Trovarci</h2>
           <p className="text-white/90 text-xl mb-8 max-w-2xl mx-auto">
-            Prenota il tuo tavolo o ordina il tuo asporto. Ti aspettiamo per farti gustare
-            la vera cucina romana!
+            Prenota il tuo tavolo o ordina da asporto. Ti aspettiamo per farti gustare il meglio della cucina italiana e le nostre pizze artigianali!
+
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/pizze-asporto" className="border-2 border-white text-white font-bold font-heading px-8 py-4 rounded-full hover:bg-white hover:text-primary-black transition-all duration-300">
@@ -174,14 +174,12 @@ function Home() {
             <div>
               <h2 className="font-heading text-4xl text-secondary-gray-dark mb-6">La Nostra Storia</h2>
               <p className="text-secondary-gray text-lg mb-6">
-                I Gladiatori nasce nel 1985 dal sogno di portare la vera cucina romana tradizionale
-                nel cuore della città. Da oltre 35 anni, la nostra famiglia si dedica con passione
-                alla preparazione di piatti autentici, utilizzando solo ingredienti freschi e di qualità.
+                I Gladiatori nasce nel 2007 ad Albavilla, con l'obiettivo di offrire una cucina italiana genuina, fatta di ingredienti freschi e ricette che uniscono tradizione e creatività.
+
               </p>
               <p className="text-secondary-gray text-lg mb-8">
-                La nostra filosofia è semplice: rispettare le tradizioni culinarie romane,
-                mantenere alta la qualità degli ingredienti e offrire un'esperienza gastronomica
-                che riscaldi il cuore e soddisfi il palato.
+                Nel tempo siamo diventati un punto di riferimento per chi cerca pizze artigianali (anche con impasto Pinsa, integrale o senza glutine) e piatti curati di terra e di mare.
+                La nostra filosofia è semplice: attenzione alla qualità, rispetto per i sapori autentici e passione per l’ospitalità.
               </p>
               <Link to="/about" className="bg-primary-yellow text-primary-black font-bold font-heading px-8 py-4 rounded-full hover:bg-secondary-orange-light transition-all duration-300">
                 Scopri di Più
