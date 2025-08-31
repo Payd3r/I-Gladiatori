@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaUtensils, FaFire, FaLeaf, FaStar } from 'react-icons/fa';
+import OptimizedImage from '../components/OptimizedImage';
 import logo from '../assets/logo.webp';
 import img1 from '../assets/1.jpg';
 import img2 from '../assets/2.jpg';
@@ -14,12 +15,12 @@ function Home() {
       {/* Hero Section */}
       <section className="relative h-[calc(100vh-100px)] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
-          <img src={img1} alt="I Gladiatori" className="w-full h-full object-cover" />
+          <OptimizedImage src={img1} alt="I Gladiatori" className="w-full h-full" priority={true} />
           <div className="absolute inset-0 bg-black/50"></div>
         </div>
 
         <div className="relative z-10 text-center text-white px-4">
-          <img src={logo} alt="Logo" className="w-24 h-24 mx-auto mb-6 drop-shadow-2xl" />
+          <OptimizedImage src={logo} alt="Logo" className="w-24 h-24 mx-auto mb-6 drop-shadow-2xl" priority={true} />
           <h1 className="font-heading text-5xl md:text-7xl mb-6 animate-fade-in">
             I Gladiatori
           </h1>
@@ -85,8 +86,8 @@ function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="group bg-white border border-secondary-gray-light rounded-2xl overflow-hidden shadow-xl transform hover:-translate-y-4 transition-all duration-500 hover:shadow-2xl">
-              <div className="relative overflow-hidden">
-                <img src={img2} alt="Pizza Margherita" className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500" />
+              <div className="relative overflow-hidden h-48">
+                <OptimizedImage src={img2} alt="Pizza Margherita" className="w-full h-full group-hover:scale-110 transition-transform duration-500" />
                 <div className="absolute top-4 right-4 bg-primary-yellow text-primary-black px-3 py-1 rounded-full text-sm font-bold">
                   BEST SELLER
                 </div>
@@ -123,8 +124,8 @@ function Home() {
             </div>
 
             <div className="group bg-white border border-secondary-gray-light rounded-2xl overflow-hidden shadow-xl transform hover:-translate-y-4 transition-all duration-500 hover:shadow-2xl">
-              <div className="relative overflow-hidden">
-                <img src={img4} alt="Tiramisù" className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500" />
+              <div className="relative overflow-hidden h-48">
+                <OptimizedImage src={img4} alt="Pizza Burrata con Crudo" className="w-full h-full group-hover:scale-110 transition-transform duration-500" />
                 <div className="absolute top-4 right-4 bg-primary-yellow text-primary-black px-3 py-1 rounded-full text-sm font-bold">
                   BEST SELLER
                 </div>
@@ -165,7 +166,7 @@ function Home() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
-              <img src={img5} alt="I Gladiatori" className="rounded-2xl shadow-xl" />
+              <OptimizedImage src={img5} alt="I Gladiatori" className="rounded-2xl shadow-xl" />
               <div className="absolute -top-4 -right-4 bg-primary-yellow text-primary-black px-4 py-2 rounded-full font-bold">
                 Dal 1985
               </div>

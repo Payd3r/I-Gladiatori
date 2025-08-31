@@ -1,13 +1,63 @@
 <!doctype html>
-<html lang="en">
+<html lang="it">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/webp" href="/src/assets/logo.webp" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&family=Oswald:wght@400;700&family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&family=Pacifico&family=Lobster&display=swap" rel="stylesheet">
-    <title>I Gladiatori</title>
+    <meta name="description" content="I Gladiatori - Autentica cucina italiana e pizzeria a Roma. Scopri i nostri piatti tradizionali e le nostre pizze artigianali preparate con ingredienti freschi e di qualità." />
+    <meta name="keywords" content="ristorante, pizzeria, cucina italiana, Roma, pizza artigianale, piatti tradizionali, I Gladiatori" />
+    <meta name="author" content="I Gladiatori" />
+    <title>I Gladiatori - Autentica Cucina Italiana e Pizzeria a Roma</title>
+    
+    <!-- Preload delle risorse critiche -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&family=Oswald:wght@400;700&family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&family=Pacifico&family=Lobster&display=swap" as="style" />
+    <link rel="preload" href="/src/assets/logo.webp" as="image" />
+    
+    <!-- Preconnect per risorse esterne -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- Preload delle immagini critiche above-the-fold -->
+    <link rel="prefetch" href="/src/assets/1.jpg" as="image" />
+    <link rel="prefetch" href="/src/assets/2.jpg" as="image" />
+    <link rel="prefetch" href="/src/assets/3.jpg" as="image" />
+    
+    <!-- Meta tag per SEO e social sharing -->
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="I Gladiatori - Autentica Cucina Italiana e Pizzeria a Roma" />
+    <meta property="og:description" content="Scopri l'autentica cucina italiana e le nostre pizze artigianali preparate con ingredienti freschi e di qualità." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/src/assets/logo.webp" />
+    <meta property="og:url" content="https://igladiatori.com" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="I Gladiatori - Autentica Cucina Italiana" />
+    <meta name="twitter:description" content="Scopri l'autentica cucina italiana e le nostre pizze artigianali." />
+    <meta name="twitter:image" content="/src/assets/logo.webp" />
+    
+    <!-- Structured Data per SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "I Gladiatori",
+      "description": "Autentica cucina italiana e pizzeria a Roma",
+      "url": "https://igladiatori.com",
+      "logo": "/src/assets/logo.webp",
+      "servesCuisine": "Italian",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "IT",
+        "addressLocality": "Roma"
+      }
+    }
+    </script>
+    
+    <!-- Caricamento asincrono dei font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&family=Oswald:wght@400;700&family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&family=Pacifico&family=Lobster&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+    <noscript>
+      <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&family=Oswald:wght@400;700&family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&family=Pacifico&family=Lobster&display=swap" rel="stylesheet" />
+    </noscript>
   </head>
   <body>
     <div id="root"></div>

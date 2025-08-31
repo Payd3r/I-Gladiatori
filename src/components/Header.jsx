@@ -1,14 +1,67 @@
-import React, { useState } from 'react';
-import { NavLink, Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { NavLink, Link, useLocation } from 'react-router-dom';
 import { FaInstagram, FaFacebookF } from 'react-icons/fa';
 import { HiMenu, HiX } from 'react-icons/hi';
 import logo from '../assets/logo.webp';
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
+
+  const navigation = [
+    { name: 'Home', href: '/' },
+    { name: 'Menù', href: '/pizzeria' },
+    { name: 'Ristorante', href: '/ristorante' },
+    { name: 'Asporto', href: '/pizze-asporto' },
+  ];
 
   const navLinkClasses = ({ isActive }) =>
     `text-lg font-heading px-2 py-1 rounded transition-colors duration-300 hover:text-primary-yellow hover:bg-primary-cream/40 ${isActive ? 'text-primary-yellow' : 'text-secondary-gray-dark'}`;
+
+  // Preload intelligente delle pagine al hover
+  const handleLinkHover = (href) => {
+    if (href !== location.pathname) {
+      const routeMap = {
+        '/': () => import('../pages/Home'),
+        '/pizzeria': () => import('../pages/Pizzeria'),
+        '/ristorante': () => import('../pages/Restaurant'),
+        '/pizze-asporto': () => import('../pages/TakeAway'),
+        '/privacy-policy': () => import('../pages/PrivacyPolicy')
+      };
+
+      const preloadFunc = routeMap[href];
+      if (preloadFunc) {
+        preloadFunc().catch(() => {
+          // Ignore preload errors
+        });
+      }
+    }
+  };
+
+  // Preload delle immagini critiche dopo il mount
+  useEffect(() => {
+    const criticalImages = [
+      '/src/assets/logo.webp',
+      '/src/assets/1.jpg',
+      '/src/assets/2.jpg',
+      '/src/assets/3.jpg'
+    ];
+
+    // Preload delle immagini con priorità bassa
+    const preloadImages = () => {
+      criticalImages.forEach(src => {
+        const img = new Image();
+        img.src = src;
+      });
+    };
+
+    // Usa requestIdleCallback se disponibile, altrimenti setTimeout
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(preloadImages);
+    } else {
+      setTimeout(preloadImages, 1000);
+    }
+  }, []);
 
   return (
     <header className="sticky top-0 z-50 bg-primary-cream/90 backdrop-blur-md shadow-lg border-b border-secondary-gray-light">
@@ -24,10 +77,16 @@ function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-4 lg:space-x-8">
-            <NavLink to="/" className={navLinkClasses}>Home</NavLink>
-            <NavLink to="/pizzeria" className={navLinkClasses}>Menù</NavLink>
-            <NavLink to="/ristorante" className={navLinkClasses}>Ristorante</NavLink>
-            <NavLink to="/pizze-asporto" className={navLinkClasses}>Asporto</NavLink>
+            {navigation.map((item) => (
+              <NavLink
+                key={item.name}
+                to={item.href}
+                className={navLinkClasses}
+                onMouseEnter={() => handleLinkHover(item.href)}
+              >
+                {item.name}
+              </NavLink>
+            ))}
             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-secondary-gray-dark hover:text-primary-yellow transition-colors duration-300">
               <FaInstagram size={22} />
             </a>
@@ -49,10 +108,16 @@ function Header() {
       {isOpen && (
         <div className="md:hidden bg-primary-cream/95 border-t border-secondary-gray-light shadow-lg">
           <nav className="px-4 pt-4 pb-6 space-y-2 text-center flex flex-col items-center">
-            <NavLink to="/" className={navLinkClasses} onClick={() => setIsOpen(false)}>Home</NavLink>
-            <NavLink to="/pizzeria" className={navLinkClasses} onClick={() => setIsOpen(false)}>Menù</NavLink>
-            <NavLink to="/ristorante" className={navLinkClasses} onClick={() => setIsOpen(false)}>Ristorante</NavLink>
-            <NavLink to="/pizze-asporto" className={navLinkClasses} onClick={() => setIsOpen(false)}>Asporto</NavLink>            
+            {navigation.map((item) => (
+              <NavLink
+                key={item.name}
+                to={item.href}
+                className={navLinkClasses}
+                onClick={() => setIsOpen(false)}
+              >
+                {item.name}
+              </NavLink>
+            ))}            
             <div className="flex justify-center space-x-6 mt-4">
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-secondary-gray-dark hover:text-primary-yellow transition-colors duration-300">
                 <FaInstagram size={26} />
